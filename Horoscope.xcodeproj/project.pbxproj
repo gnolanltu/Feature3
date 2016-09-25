@@ -15,8 +15,7 @@
 		CE90C94E1D96F399004FF335 /* HoroscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C94D1D96F399004FF335 /* HoroscopeTests.swift */; };
 		CE90C9591D96F399004FF335 /* HoroscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9581D96F399004FF335 /* HoroscopeUITests.swift */; };
 		CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9661D970B89004FF335 /* SignsTableViewController.swift */; };
-		CE90C9691D97256E004FF335 /* HoroscopeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9681D97256E004FF335 /* HoroscopeModel.swift */; };
-		CE90C96B1D972866004FF335 /* HoroscopeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */; };
+		CE90C96D1D98201B004FF335 /* HoroscopeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C96C1D98201B004FF335 /* HoroscopeData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,7 @@
 		CE90C9581D96F399004FF335 /* HoroscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeUITests.swift; sourceTree = "<group>"; };
 		CE90C95A1D96F399004FF335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE90C9661D970B89004FF335 /* SignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsTableViewController.swift; sourceTree = "<group>"; };
-		CE90C9681D97256E004FF335 /* HoroscopeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeModel.swift; sourceTree = "<group>"; };
-		CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeDetail.swift; sourceTree = "<group>"; };
+		CE90C96C1D98201B004FF335 /* HoroscopeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CE90C9381D96F398004FF335 /* AppDelegate.swift */,
-				CE90C9681D97256E004FF335 /* HoroscopeModel.swift */,
-				CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */,
+				CE90C96C1D98201B004FF335 /* HoroscopeData.swift */,
 				CE90C93A1D96F398004FF335 /* ViewController.swift */,
 				CE90C9661D970B89004FF335 /* SignsTableViewController.swift */,
 				CE90C93C1D96F398004FF335 /* Main.storyboard */,
@@ -268,10 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE90C96D1D98201B004FF335 /* HoroscopeData.swift in Sources */,
 				CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */,
-				CE90C96B1D972866004FF335 /* HoroscopeDetail.swift in Sources */,
 				CE90C93B1D96F398004FF335 /* ViewController.swift in Sources */,
-				CE90C9691D97256E004FF335 /* HoroscopeModel.swift in Sources */,
 				CE90C9391D96F398004FF335 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

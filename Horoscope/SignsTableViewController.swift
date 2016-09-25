@@ -10,11 +10,13 @@ import UIKit
 
 class SignsTableViewController: UITableViewController {
 
-    let horoscopeModel = HoroscopeModel()
+    let horoscopeModel = HoroscopeData.horoscopes
+    
+    // let horoscopeModel = HoroscopeModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        horoscopeModel.fetch()
+        // horoscopeModel.fetch()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,7 +39,7 @@ class SignsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return horoscopeModel.horoscopeDetails.count
+        return horoscopeModel.count
     }
 
     
@@ -45,8 +47,8 @@ class SignsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "signCell", for: indexPath)
 
         // Configure the cell...
-        let horoscopeDetail = horoscopeModel.horoscopeDetails[indexPath.row]
-        cell.textLabel?.text = horoscopeDetail.horoscopeName //
+        let horoscopeDetail = horoscopeModel[indexPath.row]
+        cell.textLabel?.text = horoscopeDetail.name //
         
         return cell
     }
