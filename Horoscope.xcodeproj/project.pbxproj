@@ -14,6 +14,9 @@
 		CE90C9431D96F398004FF335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE90C9411D96F398004FF335 /* LaunchScreen.storyboard */; };
 		CE90C94E1D96F399004FF335 /* HoroscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C94D1D96F399004FF335 /* HoroscopeTests.swift */; };
 		CE90C9591D96F399004FF335 /* HoroscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9581D96F399004FF335 /* HoroscopeUITests.swift */; };
+		CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9661D970B89004FF335 /* SignsTableViewController.swift */; };
+		CE90C9691D97256E004FF335 /* HoroscopeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9681D97256E004FF335 /* HoroscopeModel.swift */; };
+		CE90C96B1D972866004FF335 /* HoroscopeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CE90C9541D96F399004FF335 /* HoroscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoroscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE90C9581D96F399004FF335 /* HoroscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeUITests.swift; sourceTree = "<group>"; };
 		CE90C95A1D96F399004FF335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE90C9661D970B89004FF335 /* SignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsTableViewController.swift; sourceTree = "<group>"; };
+		CE90C9681D97256E004FF335 /* HoroscopeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeModel.swift; sourceTree = "<group>"; };
+		CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				CE90C9381D96F398004FF335 /* AppDelegate.swift */,
+				CE90C9681D97256E004FF335 /* HoroscopeModel.swift */,
+				CE90C96A1D972866004FF335 /* HoroscopeDetail.swift */,
 				CE90C93A1D96F398004FF335 /* ViewController.swift */,
+				CE90C9661D970B89004FF335 /* SignsTableViewController.swift */,
 				CE90C93C1D96F398004FF335 /* Main.storyboard */,
 				CE90C93F1D96F398004FF335 /* Assets.xcassets */,
 				CE90C9411D96F398004FF335 /* LaunchScreen.storyboard */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */,
+				CE90C96B1D972866004FF335 /* HoroscopeDetail.swift in Sources */,
 				CE90C93B1D96F398004FF335 /* ViewController.swift in Sources */,
+				CE90C9691D97256E004FF335 /* HoroscopeModel.swift in Sources */,
 				CE90C9391D96F398004FF335 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +515,7 @@
 				CE90C95F1D96F399004FF335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE90C9601D96F399004FF335 /* Build configuration list for PBXNativeTarget "HoroscopeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +524,7 @@
 				CE90C9621D96F399004FF335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE90C9631D96F399004FF335 /* Build configuration list for PBXNativeTarget "HoroscopeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +533,7 @@
 				CE90C9651D96F399004FF335 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
