@@ -42,5 +42,16 @@ class HoroscopeTests: XCTestCase {
         XCTAssertEqual(horoscopeModel[11].name, "Pisces")
         
     }
+ 
+    func testHoroscopeDescription() {
+        XCTAssertEqual(horoscopeModel[0].description, "Courageous and Energetic.")
+    }
     
+    func testHoroscopeSymbols() {
+        XCTAssertEqual(horoscopeModel[0].symbol, "Ram")
+    }
+    
+    func testHoroscopeMonth() {
+        XCTAssertEqual(horoscopeModel[0].month, "April")
+    }
 }
