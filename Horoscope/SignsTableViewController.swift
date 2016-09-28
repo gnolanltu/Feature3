@@ -10,10 +10,12 @@ import UIKit
 
 class SignsTableViewController: UITableViewController {
 
+    var currentSignDetail:Horoscope
+    
     let horoscopeModel = HoroscopeData.horoscopes
     
-    // let horoscopeModel = HoroscopeModel()
-    
+
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // horoscopeModel.fetch()
@@ -97,5 +99,20 @@ class SignsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "showDetail") {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                    let signsDetailViewController:SignsDetailViewController =
+                                                segue.destination as! SignsDetailViewController
+                let signNumber = indexPath.row
+                signsDetailViewController.currentSignDetail = signNumber
+     
+            }
+        }
+    }
 }

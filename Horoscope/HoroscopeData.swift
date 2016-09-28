@@ -17,7 +17,10 @@ struct Horoscope {
 struct HoroscopeData {
     
     static let horoscopes = [
-        Horoscope(name: "Aries",description: "Courageous and Energetic.", symbol: "Ram", month: "April"),
+        Horoscope(name: "Aries",
+                  description: "Courageous and Energetic.",
+                  symbol: "Ram",
+                  month: "April"),
         Horoscope(name: "Taurus",description: "Known for being reliable, practical, ambitious and sensual.", symbol: "Bull", month: "May"),
         Horoscope(name: "Gemini",description: "Gemini-born are clever and intellectual.", symbol: "Twins", month: "June"),
         Horoscope(name: "Cancer",description: "Tenacious, loyal and sympathetic.", symbol: "Crab", month: "July"),
