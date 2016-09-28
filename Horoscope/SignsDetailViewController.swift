@@ -23,9 +23,11 @@ class SignsDetailViewController: UIViewController {
         if let currentSignDetailValue =  currentSignDetail
         {
             signName.text = HoroscopeData.horoscopes[currentSignDetailValue].name
-        }        //signSymbol.text = currentSignDetail?.symbol
-        //signMonth.text = currentSignDetail?.month
-        //signDescription.text = currentSignDetail?.description
+            signSymbol.text = HoroscopeData.horoscopes[currentSignDetailValue].symbol
+            signMonth.text = HoroscopeData.horoscopes[currentSignDetailValue].month
+            signDescription.text = HoroscopeData.horoscopes[currentSignDetailValue].description
+            //signDescription.text = currentSignDetail?.description
+        }
         
         // Do any additional setup after loading the view.
     }
