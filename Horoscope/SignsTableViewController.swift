@@ -10,7 +10,7 @@ import UIKit
 
 class SignsTableViewController: UITableViewController {
 
-    var currentSignDetail:Horoscope
+    var currentSignDetail:Int?
     
     let horoscopeModel = HoroscopeData.horoscopes
     

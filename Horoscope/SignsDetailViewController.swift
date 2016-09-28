@@ -10,7 +10,8 @@ import UIKit
 
 class SignsDetailViewController: UIViewController {
 
-    var currentSignDetail:Horoscope?
+    var currentSignDetail:Int?
+    
     @IBOutlet weak var signName: UILabel!
     @IBOutlet weak var signSymbol: UILabel!
     @IBOutlet weak var signMonth: UILabel!
@@ -19,10 +20,10 @@ class SignsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        signName.text = currentSignDetail?.name
-        signSymbol.text = currentSignDetail?.symbol
-        signMonth.text = currentSignDetail?.month
-        signDescription.text = currentSignDetail?.description
+        signName.text = HoroscopeData.horoscopes[currentSignDetail!].name
+        //signSymbol.text = currentSignDetail?.symbol
+        //signMonth.text = currentSignDetail?.month
+        //signDescription.text = currentSignDetail?.description
         
         // Do any additional setup after loading the view.
     }
