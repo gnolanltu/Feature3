@@ -20,8 +20,10 @@ class SignsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        signName.text = HoroscopeData.horoscopes[currentSignDetail!].name
-        //signSymbol.text = currentSignDetail?.symbol
+        if let currentSignDetailValue =  currentSignDetail
+        {
+            signName.text = HoroscopeData.horoscopes[currentSignDetailValue].name
+        }        //signSymbol.text = currentSignDetail?.symbol
         //signMonth.text = currentSignDetail?.month
         //signDescription.text = currentSignDetail?.description
         
