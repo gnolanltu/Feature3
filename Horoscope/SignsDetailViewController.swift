@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignsDetailViewController: UIViewController {
+class SignsDetailViewController: UIViewController, XMLParserDelegate {
 
     var currentSignDetail:Int?
     
@@ -16,6 +16,7 @@ class SignsDetailViewController: UIViewController {
     @IBOutlet weak var signSymbol: UILabel!
     @IBOutlet weak var signMonth: UILabel!
     @IBOutlet weak var signDescription: UILabel!
+    @IBOutlet weak var signHoroscope: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,23 @@ class SignsDetailViewController: UIViewController {
             signSymbol.text = HoroscopeData.horoscopes[currentSignDetailValue].symbol
             signMonth.text = HoroscopeData.horoscopes[currentSignDetailValue].month
             signDescription.text = HoroscopeData.horoscopes[currentSignDetailValue].description
-            //signDescription.text = currentSignDetail?.description
+
+            //let url = NSURL(string: "http://www.findyourfate.com/rss/dailyhoroscope-feed.asp?sign=Aries&id=45")
+   
+            // let request = NSURLRequest(url: url! as URL)
+            
+            // https://github.com/tadija/AEXML/blob/master/Tests/AEXMLTests.swift
+            // http://stackoverflow.com/questions/38292793/http-requests-in-swift-3 for setting params
+            
+            let url = URL(string: "http://www.findyourfate.com/rss/dailyhoroscope-feed.asp?sign=Aries&id=45")
+            let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
+                if let data = data,
+                    let html = String(data: data, encoding: String.Encoding.utf8) {
+                        self.signHoroscope.text = html
+                    // print(html)
+                }
+            }
+            task.resume()
         }
         
         // Do any additional setup after loading the view.
