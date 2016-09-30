@@ -12,7 +12,12 @@ import XCTest
 class HoroscopeTests: XCTestCase {
     
     let horoscopeModel = HoroscopeData.horoscopes
+
+    var signsDetailViewController  = SignsDetailViewController()
     
+
+
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -53,5 +58,31 @@ class HoroscopeTests: XCTestCase {
     
     func testHoroscopeMonth() {
         XCTAssertEqual(horoscopeModel[0].month, "April")
+    }
+    
+    func testAppendURL() {
+        let compURL = HoroscopeService.sharedInstance.appendURL(sign: "Aries")
+        XCTAssertEqual(compURL, "http://www.findyourfate.com/rss/dailyhoroscope-feed.asp?sign=Aries&id=45")
+    }
+
+    func testHoroscopeApiData()
+    {
+        let expectation = self.expectation(description:"GET Async")
+
+        HoroscopeService.sharedInstance.callDailyhoroscopeApi(sign: "Aries", parameters: nil, success: { (data) in
+            
+            XCTAssertNotNil(data)
+            XCTAssertNotNil(HoroscopeService.horoscopeUrl)
+            XCTAssertEqual(HoroscopeService.horoscopeUrl, "http://www.findyourfate.com/rss/dailyhoroscope-feed.asp?sign=Aries&id=45")
+
+            expectation.fulfill()
+            }) { (error) in
+                
+        }
+        waitForExpectations(timeout: 10.0, handler: nil)
+    }
+    
+    func testXmlParser()
+    {
     }
 }

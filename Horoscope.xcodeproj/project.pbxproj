@@ -17,6 +17,7 @@
 		CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C9661D970B89004FF335 /* SignsTableViewController.swift */; };
 		CE90C96D1D98201B004FF335 /* HoroscopeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C96C1D98201B004FF335 /* HoroscopeData.swift */; };
 		CE90C96F1D9AAA93004FF335 /* SignsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE90C96E1D9AAA93004FF335 /* SignsDetailViewController.swift */; };
+		D5A926B81D9D99BC007F697A /* HoroscopeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A926B71D9D99BC007F697A /* HoroscopeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CE90C9661D970B89004FF335 /* SignsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsTableViewController.swift; sourceTree = "<group>"; };
 		CE90C96C1D98201B004FF335 /* HoroscopeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeData.swift; sourceTree = "<group>"; };
 		CE90C96E1D9AAA93004FF335 /* SignsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignsDetailViewController.swift; sourceTree = "<group>"; };
+		D5A926B71D9D99BC007F697A /* HoroscopeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				CE90C9381D96F398004FF335 /* AppDelegate.swift */,
 				CE90C96C1D98201B004FF335 /* HoroscopeData.swift */,
+				D5A926B71D9D99BC007F697A /* HoroscopeService.swift */,
 				CE90C93A1D96F398004FF335 /* ViewController.swift */,
 				CE90C9661D970B89004FF335 /* SignsTableViewController.swift */,
 				CE90C96E1D9AAA93004FF335 /* SignsDetailViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A926B81D9D99BC007F697A /* HoroscopeService.swift in Sources */,
 				CE90C96D1D98201B004FF335 /* HoroscopeData.swift in Sources */,
 				CE90C9671D970B89004FF335 /* SignsTableViewController.swift in Sources */,
 				CE90C93B1D96F398004FF335 /* ViewController.swift in Sources */,
